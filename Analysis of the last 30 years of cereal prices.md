@@ -230,7 +230,7 @@ ggplot(yearly_price_pivoted, aes(Year, Avg_Price, group = Cerial_type)) +
   scale_color_manual(name = "Cereal types", labels = c("Corn", "Rice", "Wheat"), values = c("gold2", "gray30", "darkolivegreen"))
 ```
 
-![](Cerial-Prices-Changes-Within-Last-30-Years_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![Average price of three cereal types over 30 years](https://user-images.githubusercontent.com/101715443/159247515-38ac44e4-931a-4c2f-a65e-addc6e75cea5.png)
 
 ``` r
 ggsave('Average price of three cereal types over 30 years', device = "png",
@@ -300,7 +300,7 @@ ggplot(yearly_price_percentage_change, aes(Year, Year_on_year, fill = Cerial_typ
 
     ## Warning: Removed 3 rows containing missing values (geom_col).
 
-![](Cerial-Prices-Changes-Within-Last-30-Years_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![Percentage change in prices year on year for the last 28 years](https://user-images.githubusercontent.com/101715443/159247537-e53fccf9-64fb-4942-a1a9-f388a1ed8572.png)
 
 ``` r
 ggsave('Percentage change in prices year on year for the last 28 years', device = "png",
